@@ -1,0 +1,31 @@
+{
+  "name": "register",
+  "version": "1.0.0",
+  "description": "Launch portal for Abhyuday IIT Bombay social fest 2k20",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dLakhera/launchPortal_fest.git"
+  },
+  "author": "Deepak Lakhera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dLakhera/launchPortal_fest/issues"
+  },
+  "homepage": "https://github.com/dLakhera/launchPortal_fest#readme",
+  "devDependencies": {
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "lite-server": "^2.6.1",
+    "three": "^0.124.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "lottie-web": "^5.7.5"
+  }
+}

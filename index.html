@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-signin-client_id"
+        content="27410510832-ufn6qu17hi64gchsjtjkmdu0haq0of7r.apps.googleusercontent.com">
+
+
+
+    <title>Abhyuday IIT Bombay</title>
+
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+
+    <!--<script defer src="./node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script> -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+
+    <!-- LINKS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="./node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"> -->
+    <link rel="shortcut icon" href="assets/html/black.png" type="image/x-icon">
+    <link rel="icon" href="assets/html/black.png" type="image/x-icon">
+</head>
+<header>
+
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+            <div class="container d-none d-sm-block">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-4 mb-sm-0">
+                        <li class="nav-item">
+                            <a class="nav-link active navbar-text" aria-current="page" href="#ContentCarousel"
+                                role="button" data-bs-slide-to="0">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-text" href="#ContentCarousel" role="button"
+                                data-bs-slide-to="1">About Us</a>
+                        </li>
+                    </ul>
+                    <div class="mr-auto">
+                        <a class="navbar-brand" href="https://www.abhyudayiitb.org/"><img
+                                src="assets/html/blacklogo.png" id="nav-brand" alt="Abhyuday"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mx-auto d-sm-none">
+                <a class="navbar-brand" href="https://www.abhyudayiitb.org/"><img src="assets/html/blacklogo.png"
+                        id="nav-brand" alt="Abhyuday"></a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<body onload="sessionCheck()">
+
+
+    <div id="preloader">
+    </div> -->
+    <div id="contentDiv">
+        <div class="container-fluid Bodycontainer align-middle">
+            <div class="row">
+                <div id="ContentCarousel" class="carousel slide" data-bs-interval="false" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#ContentCarousel" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#ContentCarousel" data-bs-slide-to="1"></li>
+                    </ol>
+
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="card border-0">
+                                <div class="row Bodycontainer">
+                                    <div class="col d-lg-none">
+                                        <div class="col text-center">
+                                            <img class="mx-auto" src="assets/html/logo.png" style="height: 20vh">
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-sm-1"></div> -->
+                                    <div class="col-lg-7" id="c"></div>
+                                    <!-- <div class="col-sm-1"></div> -->
+                                    <div class="col-lg-5">
+                                        <div class="row">
+                                            <div class="row mt-3 d-lg-block d-none">
+                                                <div class="col text-center">
+                                                    <img class="mx-auto" src="assets/html/logo-eye.png">
+                                                </div>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <div class="col mb-2 text-center">
+                                                    <img class="mx-auto" src="assets/html/regBtn.png" id="googleSignIn"
+                                                        style="width:20vh" onclick="signInButtonClicked()">
+
+                                                    <a href="https://calendar.google.com/calendar/r/eventedit?text=Abhyuday+Social+Fest&dates=20210123/20210125&details=Abhyuday%20is%20organizing%20the%208th%20edition%20of%20the%20Social%20Festival%20on%2023rd%20%26%2024th%20January%202021%20based%20on%20the%20theme%20%22The%20Denizen%20Dream%22.%20Set%20the%20reminder%20on%20your%20Google%20Calendars%20by%20clicking%20the%20above%20button%20to%20enjoy%20the%20events%2C%20take%20part%20in%20workshops%20and%20campaigns.%20Our%20Website%3A%20https%3A%2F%2Fabhyudayiitb.org&location=Abhyuday%20IIT%20Bombay%2C%20Student%20Activity%20Center%2C%20Gymkhana%20Grounds%2C%20IIT%20Bombay%2C%20Powai%2C%20Mumbai&sf=true&output=xml"
+                                                        id="reminder" target="_blank" onclick="reminderClicked()"> Set a
+                                                        Reminder</a>
+                                                    <!-- <div id="gCalLink"></div> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="card border-0">
+                                <div class="card-header text-center">
+                                    <h1 style="color: wheat;">About Us</h1>
+                                </div>
+                                <div class="container text-center Bodycontainer">
+                                    <div class="row mt-1">
+                                        <div class="col col-lg-4 AboutUs">
+                                            <!-- Set Height using media querry in css -->
+                                            <iframe class="card-img-top" style="width:100%;height:100%"
+                                                src=" https://www.youtube.com/embed/UUOp8xqnjaE" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen>
+                                            </iframe>
+                                        </div>
+                                        <div class="col-lg-1"></div>
+                                        <div class="col col-lg-7 card-body">
+
+                                            <!-- <h5 class="card-title">Special title treatment</h5> -->
+                                            <div class="card-text AboutUsText">
+                                                <p>Abhyuday, started in 2014, with a group of socially inclined students
+                                                    who felt the need for a body, which provides
+                                                    opportunities to the students of the institute who wish to work for
+                                                    a better society. With a vision to channelize the
+                                                    youth towards India's social challenges, Abhyuday has established
+                                                    itself as one of the country’s largest student run
+                                                    social body in the mere span of 8 years.</p>
+                                                <p>Our flagship being campaigns, we also conduct year long events like
+                                                    conferences, donation drives, exhibitions and provide social
+                                                    fellowship, internship opportunities to the students of the
+                                                    institute. The ‘Social Fest’ usually held in January is a two day
+                                                    extravaganza that celebrates the spirit of social
+                                                    good.</p>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="text-center">
+                                        <a class="btn" target="_blank"
+                                            href="https://www.instagram.com/iitbombay_abhyuday/"><i
+                                                class="fa fa-instagram fa-lg"></i></a>
+                                        <a class="btn" target="_blank" href="https://www.facebook.com/abhyuday.iitb/"><i
+                                                class="fa fa-facebook fa-lg"></i></a>
+                                        <a class="btn" target="_blank"
+                                            href="https://www.linkedin.com/company/abhyuday-iit-bombay"><i
+                                                class="fa fa-linkedin fa-lg"></i></a>
+                                        <a class="btn" target="_blank" href="https://twitter.com/Abhyuday_IITB?s=07"><i
+                                                class="fa fa-twitter fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev w-auto" href="#ContentCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle"
+                aria-hidden="true"></span>
+            <span class="sr-only"></span>
+        </a>
+        <a class="carousel-control-next w-auto" href="#ContentCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle"
+                aria-hidden="true"></span>
+            <span class="sr-only"></span>
+        </a>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <script type="module" src="./js/main.js"></script>
+
+</body>
+
+<footer class="d-none d-md-block">
+    <!-- <div"> -->
+    <div class="row container">
+        <div class="col-12">
+            <p>&copy; All rights reserved by Abhyuday, IIT Bombay, 2020. </p>
+        </div>
+    </div>
+    <!-- </div> -->
+</footer>
+
+</html>
+

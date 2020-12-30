@@ -1,0 +1,166 @@
+@media (max-width: 992px) {
+    body {
+        background-image: url('./../assets/html/phone-bg.png');
+    }
+    #c{
+        height: 40vh;
+    }   
+    
+    .AboutUs{
+        height: 30vh;
+
+    }
+    .AboutUsText{
+        color:darkslategrey; 
+        overflow-y: scroll;
+        height: 25vh;
+        padding: 0.4rem
+
+    }
+    
+}
+
+@media (min-width: 992px) {
+    body {
+        background-image: url('./../assets/html/bg.png');
+    }
+    #c{
+        height: 70vh;
+    }
+    .AboutUs{
+        height: 100%;
+        margin-top: 15vh;
+    }    
+    .AboutUsText{
+        color:white; 
+    }
+}
+.AboutUsText{
+    font-size: large; 
+    vertical-align: middle;
+    text-align: left;
+}
+html{
+    overflow:hidden;
+}
+
+.navbar-custom {
+    background-color: #e76f51;
+}
+
+nav {
+    height: 10vh;
+}
+
+
+
+.Bodycontainer{
+    height: 80vh;
+    width: 90vw;
+    align-items: center;
+}
+.card{
+    height: 75vh;
+    width: 89vw;
+}
+.carousel{
+    height: 80vh;
+    width: 89vw;
+    align-items: center;
+}
+body {
+    height: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size:100% 100vh;
+    /* overflow: hidden; */
+}
+
+img {
+    max-width: 95%;
+    height: auto;
+}
+
+#nav-brand {
+    width: auto;
+    height: 9vh;
+}
+
+.button {
+    background-color: #e76f51;
+    border-radius: 10px;
+    color: #264653;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 5px 10px #888888;
+}
+
+#c {
+    max-height: 100%;
+}
+
+.card {
+    background-color: rgb(245,245,245,0.0);
+}
+
+footer {
+    height: 5vh;
+    background-color: bisque;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#googleSignIn {
+    display: block;
+}
+
+#googleSignIn:hover {
+    cursor: pointer;
+}
+
+#reminder {
+    background-color: rgba(52, 240, 240, 0.712);
+    box-shadow: 0 5px 0 rgba(13, 116, 134, 0.767);
+    color: white;
+    padding: 0.75em 0.6em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 12px;
+    display: none;
+    /* color: lawngreen; */
+}
+
+#reminder:hover {
+    background-color: #3579b8;
+    cursor: pointer;
+}
+
+#reminder:active {
+    box-shadow: none;
+    top: 5px;
+}
+
+#preloader {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-image: url('./../assets/html/preloader.gif');
+    /* change if the mask should have another color then white */
+    z-index: 99;
+    /* makes sure it stays on top */
+  }
+#contentDiv {
+    padding-top: 12vh;
+    opacity: 0;
+}
+
